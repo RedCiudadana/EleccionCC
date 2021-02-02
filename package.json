@@ -1,0 +1,63 @@
+{
+  "name": "eleccioncc",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "scss": "sass assets/sass:assets/css",
+    "css": "postcss assets/css/*.css -u autoprefixer cssnano -r -m",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "sass --watch assets/sass:assets/css",
+    "start": "cross-env ELEVENTY_ENV=dev npm-run-all scss --parallel watch:*",
+    "build": "cross-env ELEVENTY_ENV=prod npm-run-all scss --parallel build:eleventy css screenshot",
+    "build:eleventy": "eleventy",
+    "lint": "stylelint 'assets/sass/**/*.scss' 'assets/sass/**/**/*.scss' 'assets/sass/**/**/**/*.scss'",
+    "lint:fix": "stylelint --fix 'assets/sass/**/*.scss' 'assets/sass/**/**/*.scss' 'assets/sass/**/**/**/*.scss'",
+    "screenshot": "node functions/images.js",
+    "bump": "npm --no-git-tag-version version",
+    "build:js": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@aternus/csv-to-xlsx": "^1.0.16",
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "^4.5.2",
+    "camelcase": "^6.2.0",
+    "camelcase-keys": "^6.2.2",
+    "chart.js": "^2.9.4",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "elasticlunr": "^0.9.5",
+    "emoji-regex": "^9.0.0",
+    "json-node-normalizer": "^1.0.5",
+    "luxon": "^1.25.0",
+    "markdown-it": "^11.0.0",
+    "markdown-it-anchor": "^5.2.7",
+    "npm-run-all": "^4.1.5",
+    "papaparse": "^5.3.0",
+    "postcss-cli": "^7.1.2",
+    "puppeteer": "5.2.1",
+    "sass": "^1.26.10",
+    "stylelint": "^13.7.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedCiudadana/EleccionCC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedCiudadana/EleccionCC/issues"
+  },
+  "homepage": "https://github.com/RedCiudadana/EleccionCC#readme"
+}
