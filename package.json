@@ -12,7 +12,8 @@
     "build:eleventy": "eleventy",
     "lint": "stylelint 'assets/sass/**/*.scss' 'assets/sass/**/**/*.scss' 'assets/sass/**/**/**/*.scss'",
     "lint:fix": "stylelint --fix 'assets/sass/**/*.scss' 'assets/sass/**/**/*.scss' 'assets/sass/**/**/**/*.scss'",
-    "screenshot": "node functions/images.js",
+    "screenshot": "",
+    "screenshot.old": "node functions/images.js",
     "bump": "npm --no-git-tag-version version",
     "build:js": "webpack --mode production"
   },
