@@ -60,5 +60,8 @@
   "bugs": {
     "url": "https://github.com/RedCiudadana/EleccionCC/issues"
   },
-  "homepage": "https://github.com/RedCiudadana/EleccionCC#readme"
+  "homepage": "https://github.com/RedCiudadana/EleccionCC#readme",
+  "dependencies": {
+    "clean-css": "^5.0.1"
+  }
 }
