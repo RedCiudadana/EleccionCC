@@ -18,15 +18,15 @@
     <link rel="icon" href="{{ '/assets/favicon.ico' | url }}" />
 
     <!-- capture the CSS content as a Nunjucks variable -->
-    {% set css %}
+    {# {% set css %}
       {% include "../assets/css/style.css" %}
-    {% endset %}
+    {% endset %} #}
     <!-- feed it through our cssmin filter to minify -->
-    <style>
+    {# <style>
       {{ css | cssmin | safe }}
-    </style>
+    </style> #}
 
-    {# <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" /> #}
+    <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" />
 
     <meta name="twitter:card" content="summary_large_image" />
     {% if meta.twitterUsername %}
