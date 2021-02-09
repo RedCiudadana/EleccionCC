@@ -4,6 +4,17 @@
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
 {%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2SPMR3TS6R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-2SPMR3TS6R');
+    </script>
     <!-- Generated from the 11ty Netlify Jumpstart: https://github.com/5t3ph/11ty-netlify-jumpstart -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -58,8 +69,13 @@
       title="RSS Feed for {{ meta.siteName }}"
       href="/feed/"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
 
     {% block head %}
+      <title>ElecionCC | Red Ciudadana</title>
     {% endblock %}
   </head>
   <body>
@@ -73,19 +89,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link font-weight-bold" href="/">
+            <a class="nav-link font-weight-bold  align-self-center" href="/">
               Inicio
             </a>
-            <a class="nav-link font-weight-bold pl-lg-4" href="/comisiones/index.html">
+            <a class="nav-link font-weight-bold pl-lg-2 d-flex align-self-center" href="/comisiones/index.html">
               Comisiones de Postulación
             </a>
-            <a class="nav-link font-weight-bold pl-lg-4" href="/comisionados/index.html">
+            <a class="nav-link font-weight-bold pl-lg-2 d-flex align-self-center" href="/comisionados/index.html">
               Comisionados
             </a>
-            <a class="nav-link font-weight-bold pl-lg-4" href="/candidatos/index.html">
+            <a class="nav-link font-weight-bold pl-lg-2 d-flex align-self-center" href="/candidatos/index.html">
               Candidatos
             </a>
-            <a class="nav-link font-weight-bold pl-lg-4" href="/voluntariado/index.html">
+            <a class="nav-link font-weight-bold pl-lg-2 d-flex align-self-center" href="/voluntariado/index.html">
               Voluntariado
             </a>
             <a class="py-1 pl-lg-4 mr-2 d-flex" href="https://www.facebook.com/Redciudadanagt/" target="_blank" rel="noopener" class="image-opacity">
@@ -186,5 +202,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://my.hellobar.com/015b45d24e58767f919af969fd971e1eabb90523.js" type="text/javascript" charset="utf-8" async="async"></script>
   </body>
 </html>
