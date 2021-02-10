@@ -8,7 +8,8 @@
   Conoce el proceso de la elección de Magistrados(as) de la Corte de Constitucionalidad (2021 - 2026)
   {% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}
 {% endset -%}
-{%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
+{# {%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%} #}
+  {%- set pageSocialImg %}/assets/img/social-preview.png{% endset -%}
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2SPMR3TS6R"></script>
@@ -46,9 +47,10 @@
     <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    {% if meta.twitterUsername %}
+    <meta name="twitter:creator" content="@RedXGuate" />
+    {# {% if meta.twitterUsername %}
     <meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
-    {% endif %}
+    {% endif %} #}
     <meta
       name="twitter:title"
       content="{{pageTitle}}"
@@ -72,9 +74,10 @@
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="RSS Feed for {{ meta.siteName }}"
+      title="RSS Feed for ElecciónCC | Red Ciudadana"
       href="/feed/"
     />
+    {# title="RSS Feed for {{ meta.siteName }}" #}
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
