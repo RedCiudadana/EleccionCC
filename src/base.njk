@@ -44,7 +44,11 @@
       {{ css | cssmin | safe }}
     </style> #}
 
-    <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" />
+    {% if meta.environment === 'prod' %}
+      <!-- INLINE CSS-->
+    {% else %}
+      <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" />
+    {% endif %}
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@RedXGuate" />
