@@ -98,7 +98,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="/assets/LOGOTIPO.png" alt="Red Ciudadana" height="50">
+          <img data-src="/assets/LOGOTIPO.png" alt="Red Ciudadana" height="50" class="lazyload"  data-sizes="auto">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -121,10 +121,10 @@
               Voluntariado
             </a>
             <a class="py-1 pl-lg-4 mr-2 d-flex" href="https://www.facebook.com/Redciudadanagt/" target="_blank" rel="noopener" class="image-opacity">
-              <img src="/assets/mi-guatemala/img/icon-fb-gray.png" class="my-auto" alt="Facebook">
+              <img data-src="/assets/mi-guatemala/img/icon-fb-gray.png" class="my-auto lazyload" alt="Facebook" data-sizes="auto">
             </a>
             <a class="py-1 mr-2 d-flex" href="https://twitter.com/RedxGuate" target="_blank" rel="noopener" class="image-opacity">
-              <img src="/assets/mi-guatemala/img/icon-tw-gray.png" class="my-auto" alt="Twitter">
+              <img data-src="/assets/mi-guatemala/img/icon-tw-gray.png" class="my-auto lazyload" alt="Twitter" data-sizes="auto">
             </a>
           </div>
         </div>
@@ -173,13 +173,13 @@
             <h6 class="text-white font-weight-bold">Síguenos en:</h6>
             <div class="d-flex">
               <a class="mr-2" href="https://www.facebook.com/Redciudadanagt/" target="_blank" rel="noopener" class="image-opacity">
-                <img src="/assets/mi-guatemala/img/icon-fb-white.png" alt="Facebook">
+                <img data-src="/assets/mi-guatemala/img/icon-fb-white.png" alt="Facebook" class="lazyload" data-sizes="auto">
               </a>
               <a class="mr-2" href="https://twitter.com/RedxGuate" target="_blank" rel="noopener" class="image-opacity">
-                <img src="/assets/mi-guatemala/img/icon-tw-white.png" alt="Twitter">
+                <img data-src="/assets/mi-guatemala/img/icon-tw-white.png" alt="Twitter" class="lazyload" data-sizes="auto">
               </a>
               <a class="mr-2" href="https://www.instagram.com/redxguate/" target="_blank" rel="noopener" class="image-opacity">
-                <img src="/assets/mi-guatemala/img/icon-in-white.png" alt="Instragram">
+                <img data-src="/assets/mi-guatemala/img/icon-in-white.png" alt="Instragram" class="lazyload" data-sizes="auto">
               </a>
             </div>
           </div>
@@ -193,16 +193,16 @@
           <div class="col-12 col-md-8 d-flex pb-1 pb-md-0">
             <div>
               <a href="http://redciudadana.org/" target="_blank" rel="noopener">
-                <img src="/assets/mi-guatemala/img/logo-rc-color.png" alt="Logo de Red Ciudanana" height="50">
+                <img data-src="/assets/mi-guatemala/img/logo-rc-color.png" alt="Logo de Red Ciudanana" height="50" class="lazyload">
               </a>
             </div>
             <p class="my-auto">Desarrollado por Asociación Civil Red Ciudadana</p>
           </div>
           <div class="col-12 col-md-4 d-flex cc-icons text-left align-self-center">
             <a href="https://creativecommons.org/licenses/by-sa/3.0/gt/" target="_blank" rel="noopener" class="ml-0">
-              <img src="/assets/mi-guatemala/img/icon-cc-cc.png" alt="Creative Commons">
-              <img src="/assets/mi-guatemala/img/icon-cc-by.png" alt="Creative Commons - Atribución">
-              <img src="/assets/mi-guatemala/img/icon-cc-sa.png" alt="Creative Commons - Compartir Igual">
+              <img data-src="/assets/mi-guatemala/img/icon-cc-cc.png" alt="Creative Commons" class="lazyload" data-sizes="auto">
+              <img data-src="/assets/mi-guatemala/img/icon-cc-by.png" alt="Creative Commons - Atribución" class="lazyload" data-sizes="auto">
+              <img data-src="/assets/mi-guatemala/img/icon-cc-sa.png" alt="Creative Commons - Compartir Igual" class="lazyload" data-sizes="auto">
             </a>
           </div>
         </div>
@@ -215,6 +215,7 @@
 
     {# Bootstrap javascripts #}
     {# TODO: Uses a bundle? Clean javascript? #}
+    <script src="/assets/js/lazysizes.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
